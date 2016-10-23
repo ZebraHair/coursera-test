@@ -1,0 +1,105 @@
+
+/**********************/
+/* Author: ZebraHair */
+/********************/
+
+
+* { box-sizing: border-box; }
+
+/* Body  */
+ 
+ body {
+  font-family: arial;
+ }
+
+ h1 {
+  text-align: center;
+  font-size: 1.75rem;
+ }
+
+
+/* Titles  */
+ .title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  font-size: 1.25rem;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center
+  font-weight: bold;
+ }
+
+
+ /* Sections & Content */
+ #section1, #section2, #section3 {
+  
+  padding: 12px;
+
+ }
+
+ #section1 .content, #section2 .content, #section3 .content {
+  font-size: 1rem;
+  background-color: #999999; 
+  position: relative;
+  border:1px solid black;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+ }
+
+ 
+/* Color Blocks  */
+#section1 .title {
+  background-color: #d49898;
+  font-weight: bold;
+}
+
+#section2 .title {
+  background-color: #bf4343;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+#section3 .title {
+  background-color: #e3cf98;
+  font-weight: bold;
+}
+
+
+/* desktop  */
+@media only screen and (min-width: 992px) {
+  #section1, #section2, #section3 {
+    display: inline-block;
+    width: 33%;
+  } 
+}
+
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width: 991px) {
+  #section1, #section2, #section3 {
+    display: inline-block;
+  } 
+
+  #section1, #section2 {
+    width: 49.7%;
+  }
+
+  #section3 {
+    width: 100%;
+  }
+
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 767px) {
+  #section1, #section2, #section3 {
+    display: inline-block;
+    width: 100%;
+  } 
+
+}
